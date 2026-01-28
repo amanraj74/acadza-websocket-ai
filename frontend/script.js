@@ -10,7 +10,7 @@
 
 const CONFIG = {
     // WebSocket URL - Update this when deploying
-    WS_URL: 'ws://localhost:8000/ws',
+    WS_URL: 'wss://acadza-websocket-ai.onrender.com/ws',
     
     // Reconnection settings
     RECONNECT_DELAY: 3000,
