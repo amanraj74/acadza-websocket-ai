@@ -74,11 +74,11 @@ A real-time AI-powered conversational interview application built with **FastAPI
 ## 📸 Demo Screenshots
 
 ### Welcome Screen
-![Welcome Screen](screenshots/4.png)
+![Welcome Screen](screenshots/1.png)
 *Clean, professional welcome interface with input validation*
 
 ### Chat Conversation
-![Chat in Progress](screenshots/2.png)
+![Chat in Progress](screenshots/4.png)
 *Real-time AI-powered follow-up questions with keyword matching*
 
 ### Completion Screen
