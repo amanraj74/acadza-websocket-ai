@@ -273,44 +273,6 @@ This project fulfills all Acadza internship assignment requirements:
 
 ---
 
-## 🌐 Deployment
-
-### Render (Recommended for Backend)
-
-1. Create a new Web Service on [Render](https://render.com/)
-2. Connect your GitHub repository
-3. Configure build settings:
-   ```
-   Build Command: pip install -r backend/requirements.txt
-   Start Command: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
-   ```
-4. Add environment variable: `GEMINI_API_KEY`
-
-### Netlify/Vercel (Frontend)
-
-1. Create new site on [Netlify](https://netlify.com/) or [Vercel](https://vercel.com/)
-2. Set build directory to `frontend/`
-3. Update WebSocket URL in `script.js` to your backend deployment URL
-
-### Docker Deployment
-
-```dockerfile
-# backend/Dockerfile
-FROM python:3.10-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-```bash
-docker build -t acadza-ai-backend ./backend
-docker run -p 8000:8000 --env-file backend/.env acadza-ai-backend
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
@@ -364,7 +326,7 @@ SOFTWARE.
 
 **[Aman Jaiswal]**
 
-- 🌐 GitHub: [@your-username](https://github.com/amanraj74)
+- 🌐 GitHub: [amanraj74](https://github.com/amanraj74)
 - 💼 LinkedIn: [Aman Jaiswal](https://www.linkedin.com/in/aman-jaiswal-05b962212/)
 - 📧 Email: aerraj50@gmail.com
 ---
