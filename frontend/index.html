@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acadza AI Interview - Premium Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="mesh-gradient"></div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="app-container">
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="brand">
+                    <div class="brand-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="36" height="36" rx="10" fill="url(#brandGradient)"/>
+                            <path d="M18 10L25 14.5V23.5L18 28L11 23.5V14.5L18 10Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="18" cy="19" r="3" stroke="white" stroke-width="2.5"/>
+                            <defs>
+                                <linearGradient id="brandGradient" x1="0" y1="0" x2="36" y2="36">
+                                    <stop stop-color="#667eea"/>
+                                    <stop offset="1" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">Acadza AI</span>
+                        <span class="brand-subtitle">Intelligent Interview</span>
+                    </div>
+                </div>
+                
+                <div class="nav-status">
+                    <div class="connection-badge">
+                        <span class="pulse-dot" id="statusDot"></span>
+                        <span class="connection-text" id="statusText">Connecting...</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-wrapper">
+            
+            <!-- Welcome Screen -->
+            <div class="screen welcome-screen" id="welcomeScreen">
+                <div class="welcome-container">
+                    
+                    <div class="hero-section">
+                        <div class="floating-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2L12.5 7.5L18 10L12.5 12.5L10 18L7.5 12.5L2 10L7.5 7.5L10 2Z" fill="url(#sparkleGradient)"/>
+                                <defs>
+                                    <linearGradient id="sparkleGradient" x1="2" y1="2" x2="18" y2="18">
+                                        <stop stop-color="#FFD700"/>
+                                        <stop offset="1" stop-color="#FFA500"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>Powered by Gemini AI</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">Experience the</span>
+                            <span class="title-gradient">Future of Interviews</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Share your thoughts with our advanced AI system. We'll engage in a natural conversation with intelligent follow-up questions to truly understand you.
+                        </p>
+                        
+                        <div class="feature-pills">
+                            <div class="pill">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 8L10 10L8 14L6 10L2 8L6 6L8 2Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>AI-Powered</span>
+                            </div>
+                            <div class="pill">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>Real-time</span>
+                            </div>
+                            <div class="pill">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8L6 11L13 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>Intelligent</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="input-section">
+                        <div class="input-card">
+                            <div class="input-header">
+                                <label for="initialInput" class="input-title">Let's get started</label>
+                                <span class="input-hint">Tell us anything about yourself</span>
+                            </div>
+                            
+                            <div class="textarea-wrapper">
+                                <textarea 
+                                    id="initialInput" 
+                                    class="premium-textarea" 
+                                    placeholder="e.g., I'm passionate about AI and machine learning. I love solving complex problems and building innovative solutions..."
+                                    rows="4"
+                                    maxlength="500"
+                                ></textarea>
+                                <div class="textarea-footer">
+                                    <span class="char-indicator">
+                                        <span id="charCount">0</span><span class="char-max">/500</span>
+                                    </span>
+                                    <div class="quick-suggestions">
+                                        <button class="suggestion-chip" data-text="I love coding and technology">💻 Coding</button>
+                                        <button class="suggestion-chip" data-text="I'm excited about artificial intelligence">🤖 AI Enthusiast</button>
+                                        <button class="suggestion-chip" data-text="I enjoy learning new things every day">📚 Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button id="launchBtn" class="cta-button" disabled>
+                                <span class="button-content">
+                                    <span class="button-text">Start Interview</span>
+                                    <span class="button-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="button-shimmer"></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Chat Screen -->
+            <div class="screen chat-screen" id="chatScreen" style="display: none;">
+                
+                <!-- Progress Header -->
+                <div class="progress-header">
+                    <div class="progress-info">
+                        <div class="progress-label">
+                            <span class="label-icon">📊</span>
+                            <span>Interview Progress</span>
+                        </div>
+                        <div class="progress-stats">
+                            <span class="stat">Question <strong id="currentQuestion">0</strong></span>
+                            <span class="separator">•</span>
+                            <span class="stat">of <strong id="totalQuestions">3</strong></span>
+                        </div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Container -->
+                <div class="chat-container">
+                    <div class="messages-wrapper" id="chatMessages">
+                        <!-- Messages will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Chat Input Area -->
+                <div class="chat-input-area" id="chatInputContainer">
+                    <div class="input-box">
+                        <div class="input-controls">
+                            <textarea 
+                                id="answerInput" 
+                                class="chat-textarea" 
+                                placeholder="Type your answer here... (Press Shift+Enter for new line)"
+                                rows="1"
+                                maxlength="500"
+                            ></textarea>
+                            <button id="sendBtn" class="send-button" disabled>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-helper">
+                            <span class="helper-text">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/>
+                                    <path d="M7 4V7L9 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                                Be thoughtful and authentic in your responses
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completion Overlay -->
+                <div class="completion-screen" id="completionOverlay" style="display: none;">
+                    <div class="completion-content">
+                        <div class="success-animation">
+                            <div class="success-circle">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="48" stroke="#10B981" stroke-width="4" stroke-dasharray="302" stroke-dashoffset="302" class="success-circle-stroke"/>
+                                    <path d="M30 50L44 64L70 36" stroke="#10B981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100" class="success-checkmark"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="completion-message">
+                            <h2 class="completion-title">Interview Complete! 🎉</h2>
+                            <p class="completion-text">Thank you for sharing your thoughts with us. Your responses have been successfully recorded.</p>
+                        </div>
+                        
+                        <div class="completion-actions">
+                            <button class="action-button primary" id="restartBtn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17C7.5 17 5.35 15.5 4.3 13.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3 13L3 9L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Start New Interview</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Error Toast -->
+            <div class="toast error-toast" id="errorMessage" style="display: none;">
+                <div class="toast-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="toast-content">
+                    <span class="toast-title">Error</span>
+                    <span class="toast-message" id="errorText"></span>
+                </div>
+                <button class="toast-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <span class="footer-text">Powered by Google Gemini AI</span>
+                    <span class="footer-separator">•</span>
+                    <span class="footer-text">Built with FastAPI & WebSocket</span>
+                </div>
+                <div class="footer-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 2V8L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Real-time Connection</span>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Typing Indicator Template -->
+    <template id="typingTemplate">
+        <div class="message ai-message typing-message">
+            <div class="message-bubble ai-bubble">
+                <div class="typing-indicator">
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                </div>
+            </div>
+            <div class="message-avatar ai-avatar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M9 9H9.01M15 9H15.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
